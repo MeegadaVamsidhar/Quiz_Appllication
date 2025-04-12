@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Quiz App</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Smart Quiz App</h1>
+
+    <div class="select-topic">
+      <label for="topic-select">Choose Topic:</label>
+      <select id="topic-select">
+        <option value="dsa">Data Structures & Algorithms</option>
+        <option value="dbms">Database Management Systems</option>
+        <option value="os">Operating Systems</option>
+        <option value="cn">Computer Networks</option>
+        <option value="web">Web Technologies</option>
+        <option value="gk">General Knowledge</option>
+        <option value="ca">Current Affairs</option>
+        <option value="sci">Science & Technology</option>
+        <option value="nit">NIT Durgapur</option>
+        <option value="ap">Andhra Politics</option>
+      </select>
+      <button id="start-button" class="btn">Start Quiz</button>
+    </div>
+
+    <div id="question-container" style="display:none">
+      <div id="question"></div>
+      <div id="answer-buttons" class="btn-container"></div>
+      <div id="progress-info"></div>
+    </div>
+
+    <button id="next-button" class="btn" style="display: none;">Next</button>
+
+    <div id="score-container" class="score-container" style="display: none;">
+      <h2>Your Score: <span id="score"></span></h2>
+      <button id="restart-button" class="btn">Restart Quiz</button>
+    </div>
+
+    <div id="scoreboard" class="scoreboard" style="display: none;">
+      <h2>High Scores</h2>
+      <ul id="high-scores-list"></ul>
+    </div>
+
+    <div id="feedback" class="feedback" style="display: none;"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
